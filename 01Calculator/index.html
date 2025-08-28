@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Calulator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- <script defer>
         const addTwo = (num1, num2) => {
             return num1 + num2;
@@ -19,77 +20,78 @@
      to load first and then the rest of js to take over otherwise it will cause 
      hinderance in the page loading alright lets go -->
 
-     <div class="wrapper">
-        <div class="screen">
-            0
+     <div class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-300 via-purple-400 to-pink-500">
+        <div class="flex flex-col items-center bg-gray-100/20 p-8 rounded-2xl shadow-blue-100 shadow-xl">
+            <div class="bg-white/30 rounded-xl shadow-2xl p-6 w-90 text-right text-3xl mb-4 font-medium">
+                0
+            </div>
+            <div class="grid grid-rows-4 gap-y-3 text-3xl w-90">
+                <div class="grid grid-cols-4 gap-x-3.5">
+                    <button class="bg-white rounded-xl p-4 font-medium col-span-2 shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        C
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        &larr; 
+                    </button>
+                    <button class="bg-yellow-300 rounded-xl p-4 font-medium shadow-2xl text-purple-600 hover:bg-blue-300 active:scale-105 duration-100">
+                        &div;
+                    </button>
+                </div>
+                <div class="grid grid-cols-4 gap-x-3.5">
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        7
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        8
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        9
+                    </button>
+                    <button class="bg-yellow-300 rounded-xl p-4 font-medium shadow-2xl text-purple-600 hover:bg-blue-300 active:scale-105 duration-100">
+                        &times;
+                    </button>
+                </div>
+                <div class="grid grid-cols-4 gap-x-3.5">
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        4
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        5
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        6
+                    </button>
+                    <button class="bg-yellow-300 rounded-xl p-4 font-medium shadow-2xl text-purple-600 hover:bg-blue-300 active:scale-105 duration-100">
+                        &minus;
+                    </button>
+                </div>
+                <div class="grid grid-cols-4 gap-x-3.5">
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        1
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        2
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        3
+                    </button>
+                    <button class="bg-yellow-300 rounded-xl p-4 font-medium shadow-2xl text-purple-600 hover:bg-blue-300 active:scale-105 duration-100">
+                        &plus;
+                    </button>
+                </div>
+                <div class="grid grid-cols-4 gap-x-3.5">
+                    <button class="bg-white rounded-xl p-4 font-medium col-span-2 shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        0
+                    </button>
+                    <button class="bg-white rounded-xl p-4 font-medium shadow-2xl hover:bg-purple-300 active:scale-105 duration-100">
+                        &period;
+                    </button>
+                    <button class="bg-white/20 rounded-xl p-4 font-medium shadow-2xl text-white hover:bg-pink-500 active:scale-110 duration-100">
+                        &equals;
+                    </button>  
+                </div>
+            </div>
         </div>
-
-        <div class="calc-buttons">
-            <div class="calc-buttons-row">
-                <button class="cal-button double">
-                    C
-                </button>
-                <button class="cal-button">
-                    &larr;
-                </button>
-                <button class="cal-button">
-                    &div;
-                </button>
-            </div>
-            <div class="calc-buttons-row">
-                <button class="cal-button">
-                    7
-                </button>
-                <button class="cal-button">
-                    8
-                </button>
-                <button class="cal-button">
-                    9
-                </button>
-                <button class="cal-button">
-                    &times;
-                </button>
-            </div>
-            <div class="calc-buttons-row">
-                <button class="cal-button">
-                    4
-                </button>
-                <button class="cal-button">
-                    5
-                </button>
-                <button class="cal-button">
-                    6
-                </button>
-                <button class="cal-button">
-                    &minus;
-                </button>
-            </div>
-            <div class="calc-buttons-row">
-                <button class="cal-button">
-                    1
-                </button>
-                <button class="cal-button">
-                    2
-                </button>
-                <button class="cal-button">
-                    3
-                </button>
-                <button class="cal-button">
-                    &plus;
-                </button>
-            </div>
-            <div class="calc-buttons-row">
-                <button class="cal-button triple">
-                    0
-                </button>
-                <button class="cal-button">
-                    &equals;
-                </button>
-                
-            </div>
-
-        </div>
-
      </div>
 
     <script src="app.js">
