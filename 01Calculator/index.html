@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calulator</title>
+    <!-- <script defer>
+        const addTwo = (num1, num2) => {
+            return num1 + num2;
+        }
+    </script> -->
+</head>
+<body>
+    <!-- there are two possible ways of adding the script tag one is in the head 
+     and the other one is adding in the body (at the end of it) all the tags must 
+     be in either of these two tags head or body now if we add it in head don't forget
+     to add defer like the example shown above this is done so because we want the html
+     to load first and then the rest of js to take over otherwise it will cause 
+     hinderance in the page loading alright lets go -->
+
+     <div class="wrapper">
+        <div class="screen">
+            0
+        </div>
+
+        <div class="calc-buttons">
+            <div class="calc-buttons-row">
+                <button class="cal-button double">
+                    C
+                </button>
+                <button class="cal-button">
+                    &larr;
+                </button>
+                <button class="cal-button">
+                    &div;
+                </button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="cal-button">
+                    7
+                </button>
+                <button class="cal-button">
+                    8
+                </button>
+                <button class="cal-button">
+                    9
+                </button>
+                <button class="cal-button">
+                    &times;
+                </button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="cal-button">
+                    4
+                </button>
+                <button class="cal-button">
+                    5
+                </button>
+                <button class="cal-button">
+                    6
+                </button>
+                <button class="cal-button">
+                    &minus;
+                </button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="cal-button">
+                    1
+                </button>
+                <button class="cal-button">
+                    2
+                </button>
+                <button class="cal-button">
+                    3
+                </button>
+                <button class="cal-button">
+                    &plus;
+                </button>
+            </div>
+            <div class="calc-buttons-row">
+                <button class="cal-button triple">
+                    0
+                </button>
+                <button class="cal-button">
+                    &equals;
+                </button>
+                
+            </div>
+
+        </div>
+
+     </div>
+
+    <script src="app.js">
+
+    </script>
+
+</body>
+</html>
